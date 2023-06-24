@@ -2,7 +2,7 @@ package org.sourav;
 
 import java.util.stream.Stream;
 
-public class StreamSources {
+public class  StreamSources {
 
     public static Stream<String> stringNumbersStream() {
         return Stream.of("one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten");
