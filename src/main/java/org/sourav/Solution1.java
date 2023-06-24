@@ -45,8 +45,9 @@ public class Solution1 {
                 .map(User::getFirstName)
                 .forEach(System.out::println);
 
-        StreamSources.intNumbersStream()
-                .map((id -> StreamSources.userStream().anyMatch(user -> id == user.getId())))
+        StreamSources.userStream()
+                .filter((user -> StreamSources.intNumbersStream().anyMatch(id -> id == user.getId())))
+                .map(User::getFirstName)
                 .forEach(System.out::println);
 
         Set<Integer> set = StreamSources.intNumbersStream().collect(Collectors.toSet());
