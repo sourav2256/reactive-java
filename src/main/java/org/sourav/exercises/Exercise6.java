@@ -1,8 +1,8 @@
-package org.sourav;
+package org.sourav.exercises;
 
 import java.io.IOException;
 
-public class Solution6 {
+public class Exercise6 {
 
 
     public static void main(String[] args) throws IOException {

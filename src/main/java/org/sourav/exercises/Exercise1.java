@@ -1,4 +1,4 @@
-package org.sourav;
+package org.sourav.exercise;
 
 public class Exercise1 {
 
