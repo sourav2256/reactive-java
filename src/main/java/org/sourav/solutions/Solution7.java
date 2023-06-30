@@ -50,11 +50,13 @@ public class Solution7 {
         // Print only distinct numbers from intNumbersFluxWithRepeat
         ReactiveSources.intNumbersFlux()
                 .distinct()
+                .log()
                 .subscribe(System.out::println);
 
         // Print from intNumbersFluxWithRepeat excluding immediately repeating numbers
         ReactiveSources.intNumbersFlux()
                 .distinctUntilChanged()
+                .log()
                 .subscribe(System.out::println);
 
         System.out.println("Press a key to end");
