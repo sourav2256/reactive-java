@@ -1,4 +1,4 @@
-package org.sourav.exercise;
+package org.sourav.exercises;
 
 import java.io.IOException;
 
